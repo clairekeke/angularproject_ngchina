@@ -12,12 +12,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AppRoutingModule } from './app-routing.module';
 import { Example1Component } from './example1/example1.component';
+import { Example2Component } from './example2/example2.component';
+import { Eaxample3Component } from './eaxample3/eaxample3.component';
+import { Example3Component } from './example3/example3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    Example1Component
+    Example1Component,
+    Example2Component,
+    Eaxample3Component,
+    Example3Component
   ],
   imports: [
     BrowserModule,
