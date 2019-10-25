@@ -1,11 +1,4 @@
-#background{    
-    margin:0 auto;    
-    padding:0 auto;
-    width: 800px;
-    height: 600px;
-    background-color: blanchedalmond;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
-    }
+.word {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}

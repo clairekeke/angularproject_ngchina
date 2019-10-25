@@ -1,6 +1,21 @@
-.ng-China {
+p {
+    font-size: 80px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 200px;
     text-align: center;
-    color: darkorchid;
+}
+
+.list1{
+    color: #e1ffff;
+}
+
+.list2{
+    color: #afeeee;
+}
+
+.list3{
+    color: #00ced1;
+}
+
+.list4{
+    color: teal;
 }
