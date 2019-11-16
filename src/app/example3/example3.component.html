@@ -1,7 +1,16 @@
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+      .ng-China{
+        font-family: 'Lobster', serif;
+        font-size: 180px;
+        text-align: center;
+      }
+    </style>
 <div 
-[@keyFrames]="isfinal? 'initial':'final'"
-class='keyFramesStyle'
-(click)= 'changeState()'>
-    <p><strong>ng-China</strong></p>
+[@keyFrames]="whichState? 'initial':'final'"
+class='ng-China'
+(click)= 'toggle()'>
+    <p>ng-China</p>
 </div>
 

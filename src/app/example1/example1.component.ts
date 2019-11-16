@@ -5,7 +5,6 @@ import {
   style,
   animate,
   transition,
-  // ...
 } from '@angular/animations';
 
 @Component({
@@ -15,29 +14,25 @@ import {
       state("state1", style({
          color: "green",
          fontSize: '180px',
-         height: "200px",
       })),
       state("state2", style({
-        color: "yellow",
+        color: "darkorange",
         fontSize: '200px',
-        height: "200px"
       })),
       transition("state1 <=> state2", [
-        animate('0.5s')
+        animate('0.5s ease')
       ]),
     ])
-],
+  ],
   templateUrl: './example1.component.html',
   styleUrls: ['./example1.component.css']
 })
 export class Example1Component implements OnInit {
   
   whichState = true;
-  switchState : boolean;
-
-  changeState (switchState : boolean): void{
-      switchState = !this.whichState;
-      this.whichState = switchState;
+  
+  toggle() {
+    this.whichState = !this.whichState;
   }
   constructor() { }
 

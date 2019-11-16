@@ -1,19 +1,14 @@
-p {
-    font-size: 80px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-}
 
 .list1{
-    color: #e1ffff;
-}
-
-.list2{
     color: #afeeee;
 }
 
-.list3{
+.list2{
     color: #00ced1;
+}
+
+.list3{
+    color: #20b2aa;
 }
 
 .list4{

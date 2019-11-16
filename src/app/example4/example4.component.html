@@ -1,8 +1,16 @@
-<button (click)='push()'>Push</button>
-<div [@listOfWords] *ngIf='animatepage'><strong>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lobster">
+<style>
+    .ng-China{
+      font-family: 'Lobster', serif;
+      font-size: 60px;
+      text-align: center;
+    }
+  </style>
+<button (click)='toggle()'>Push</button>
+<div [@listOfWords] *ngIf='whichState' class='ng-China'>
     <p class='list1'>ng-China</p>
     <p class='list2'>ng-China</p>
     <p class='list3'>ng-China</p>
     <p class='list4'>ng-China</p>
-</strong>
 </div>

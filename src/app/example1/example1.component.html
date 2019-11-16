@@ -1,5 +1,16 @@
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+      .ng-China{
+        font-family: 'Lobster', serif;
+        font-size: 180px;
+        text-align: center;
+      }
+    </style>
+
+
 <div [@changeWordColor]="whichState? 'state1' : 'state2'"
-(click)="changeState(whichState)"
-class="word">
+(click)="toggle()"
+class="ng-China">
    <p><strong>ng-China</strong></p>
 </div>

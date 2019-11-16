@@ -5,8 +5,6 @@ import {
   style,
   animate,
   transition,
-  query,
-  stagger,
   group
 } from '@angular/animations';
 
@@ -16,22 +14,22 @@ import {
     trigger('groupAnimation', [
       state('final', style({
         color: 'teal',
-        backgroundColor: 'lightblue',
+        transform: 'translateY(150px)',
       })),
       state('initial', style({
         color: 'violet',
-        backgroundColor:'white',
+        transform: 'translate(0)'
       })),
       transition('initial => final', [
         group([
-          animate('3s', style({color: 'teal'})),
-          animate('3s', style({backgroundColor: 'lightblue'})),
+          animate('0.5s ease', style({color: 'teal'})),
+          animate('0.5s 0.5s ease', style({transform: 'translateY(150px)'})),
         ])
       ]),
       transition('final => initial', [
         group([
-          animate('3s', style({color: 'violet'})),
-          animate('3s', style({backgroundColor: 'white'}) ),
+          animate('0.5s ease', style({color: 'violet'})),
+          animate('0.5s 0.5s ease', style({transform: 'translateY(0px)'}) ),
         ])
       ])
     ])
@@ -41,10 +39,10 @@ import {
 })
 export class Example5Component implements OnInit {
 
-  state = true;
+ whichState = true;
 
  toggle() {
-   this.state = !this.state;
+   this.whichState = !this.whichState;
  }
 
   constructor() { }

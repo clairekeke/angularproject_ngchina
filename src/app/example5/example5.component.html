@@ -1,6 +1,15 @@
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lobster">
+<style>
+    .ng-China{
+      font-family: 'Lobster', serif;
+      font-size: 180px;
+      text-align: center;
+    }
+  </style>
 <button (click)='toggle()'>Push</button>
-<div [@groupAnimation]="state? 'final':'initial'"
-class='graph'>
-  <p><strong>ng-China</strong></p>
+<div [@groupAnimation]="whichState? 'initial':'final'"
+class='ng-China'>
+  <p>ng-China</p>
 </div>
 

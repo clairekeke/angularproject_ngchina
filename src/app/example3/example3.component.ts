@@ -12,11 +12,11 @@ import {
   selector: 'app-example3',
   animations:[
     trigger('keyFrames', [
-      state ('final', style({
-        color: 'yellow'
-      })),
       state('initial',style({
         color: 'blue'
+      })),
+      state ('final', style({
+        color: 'yellow'
       })),
       transition('initial => final', [
         animate('2s', keyframes([
@@ -42,12 +42,10 @@ import {
   styleUrls: ['./example3.component.css']
 })
 export class Example3Component implements OnInit {
+  whichState = true;
 
-  
-  isfinal = true;
-
-  changeState (): void {
-    this.isfinal = !this.isfinal;
+  toggle() {
+    this.whichState = !this.whichState;
   }
 
   constructor() { }

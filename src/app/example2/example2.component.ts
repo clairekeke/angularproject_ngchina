@@ -14,10 +14,10 @@ import {
       state('flyIn', style({ transform: 'translateX(0)' })),
       transition(':enter', [
         style({ transform: 'translateX(-100%)' }),
-        animate('0.5s 300ms ease-in')
+        animate('0.5s 300ms ease')
       ]),
       transition(':leave', [
-        animate('0.3s ease-out', style({ transform: 'translateX(100%)' }))
+        animate('0.3s ease', style({ transform: 'translateX(100%)' }))
       ])
     ])
   ],
@@ -25,13 +25,10 @@ import {
   styleUrls: ['./example2.component.css']
 })
 export class Example2Component implements OnInit {
+  whichState = true;
 
-  onPage = true;
-  move : boolean;
-
-  moveWord(move: boolean): void{
-    move = !this.onPage;
-    this.onPage = move;
+  toggle() {
+    this.whichState = !this.whichState;
   }
   constructor() { }
 

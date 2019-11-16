@@ -1,7 +1,15 @@
- <button (click)="moveWord(move)">
-        Push
-    </button>
-<div *ngIf="onPage" [@EnterOut]="'flyin'"
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+      .ng-China{
+        font-family: 'Lobster', serif;
+        font-size: 180px;
+        text-align: center;
+      }
+    </style>
+<button (click)="toggle()">Push</button>
+<div *ngIf="whichState" 
+[@EnterOut]="flyin"
 class="ng-China">
-    <p><strong>ng-China</strong></p>
+    <p>ng-China</p>
 </div>
