@@ -17,7 +17,7 @@ import {
         query('p', [
           style({opacity: 0, transform: 'translate(-100px)'}),
           stagger('0.1s', [
-            animate('500ms cubiic-bezier(0.35, 0, 0.25, 1)', style({opacity: 1, transform: 'none'}))
+            animate('500ms cubic-bezier(0.35, 0, 0.25, 1)', style({opacity: 1, transform: 'none'}))
           ])
         ])
       ]),
@@ -25,7 +25,7 @@ import {
         query('p', [
           style({opacity: 1, transform: 'none'}),
           stagger('-0.1s', [
-            animate('500ms cubiic-bezier(0.35, 0, 0.25, 1)', style({opacity: 0, transform: 'translate(-100px)'}))
+            animate('500ms cubic-bezier(0.35, 0, 0.25, 1)', style({opacity: 0, transform: 'translate(-100px)'}))
           ])
         ])
       ])

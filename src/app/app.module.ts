@@ -16,7 +16,6 @@ import { Example2Component } from './example2/example2.component';
 import { Example3Component } from './example3/example3.component';
 import { Example4Component } from './example4/example4.component';
 import { Example5Component } from './example5/example5.component';
-import { Example5CompareComponent } from './example5-compare/example5-compare.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,7 @@ import { Example5CompareComponent } from './example5-compare/example5-compare.co
     Example3Component,
     Example4Component,
     Example5Component,
-    Example5CompareComponent,
+    // Example5CompareComponent,
     //Example3Component
   ],
   imports: [

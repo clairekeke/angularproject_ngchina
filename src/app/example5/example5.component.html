@@ -7,7 +7,9 @@
       text-align: center;
     }
   </style>
-<button (click)='toggle()'>Push</button>
+  
+<button class='button' (click)='toggle()'>Start</button>
+
 <div [@groupAnimation]="whichState? 'initial':'final'"
 class='ng-China'>
   <p>ng-China</p>
